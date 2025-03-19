@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 with open("pytdbot/__init__.py", "r") as f:
     version = findall(r"__version__ = \"(.+)\"", f.read())[0]
 
-with open("README.md", "r") as f:
+with open("README.md", "r", encoding="utf-8") as f:
     readme = f.read()
 
 with open("requirements.txt", "r") as f:
